@@ -22,9 +22,9 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
         {title}
       </h3>
     ) : (
-      <div className="absolute bottom-0 p-8 justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-[24px] ">
+      <div className="absolute bottom-0 p-4 md:p-8 justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-[24px]">
         <div
-          className={`${styles.flexCenter} w-[60px] h-[60px] rounded-[24px] glassmorphism mb-[16px]`}
+          className={`${styles.flexCenter} w-[40px] md:w-[60px] h-[40px] md:h-[60px] rounded-[16px] md:rounded-[24px] glassmorphism mb-[8px] md:mb-[16px]`}
         >
           <img
             src="/headset.svg"
@@ -32,10 +32,10 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
             className="w-1/2 h-1/2 object-contain"
           />
         </div>
-        <p className="font-normal text-[16px] leading-[20px] text-white uppercase">
+        <p className="font-normal text-[12px] md:text-[16px] leading-[8px] md:leading-[20px] text-white uppercase">
           Enter the Metaverse
         </p>
-        <h2 className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-white">
+        <h2 className="mt-[8px] md:mt-[24px] font-semibold text-[24px] md:text-[32px] text-white">
           {title}
         </h2>
       </div>
