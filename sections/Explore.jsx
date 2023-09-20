@@ -1,11 +1,12 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 import styles from '../styles';
 import { staggerContainer } from '../utils/motion';
 import { TypingText, TitleText, ExploreCard } from '../components';
 import { exploreWorlds } from '../constants';
-import { useState } from 'react';
+
 const Explore = () => {
   const [active, setActive] = useState('world-2');
   return (
@@ -14,7 +15,7 @@ const Explore = () => {
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        viewport={{ once: true }}
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
         <TypingText title="| The World" textStyles="text-center" />

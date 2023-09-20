@@ -11,17 +11,17 @@ const World = () => (
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ once: true }}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
       <TypingText title="| People on the World" textStyles="text-center" />
       <TitleText
-        title={(
+        title={
           <>
             Track Friends around you and invite them to play together in the
             same world
           </>
-        )}
+        }
         textStyles="text-center"
       />
       <motion.div
